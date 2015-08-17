@@ -2,3 +2,43 @@
     margin:0;
     padding:0;
 }
+.container{
+        background: url(../img/envelope-background.png) no-repeat, url(../img/wrap_bg.png) no-repeat;
+    background-size: 948px 490px, cover;
+    background-position: center bottom, center center;
+    min-height: 600px;
+    position: relative;
+}
+.cover-container{
+    background: url(../img/cover_bg.png) no-repeat;
+    width:980px;
+    background-position: center center;
+    
+    height:190px;
+    background-size: cover;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-490px;
+    z-index:2;
+    
+}
+.form-wrapper{
+    padding:2% 0;
+ background:url(../img/letter_bg.png) no-repeat;
+ background-size: 100% 100%;
+ position:absolute;
+ bottom: -240px;
+ width:954px;
+ left:50%;
+ margin-left:-477px;
+ height:400px;
+ z-index:1;
+ background-position:center center;
+}
+.next_cont{
+    position:relative;
+    background:rgba(25,2,255,.4);
+    height:500px;
+    z-index:2;
+}
