@@ -3,34 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
     <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <title>Form_test</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
             <div class="cover-container">
-                
+                <a href="/" id="hide-letter">close</a>
             </div>
             <div class="form-wrapper">
                 <form>
-                    <input type="text" name=""/>
-                    <input type="submit" value="Submit"/>
+                    <div class="col-wrap clearfix">
+                        <div class="form_col-left">
+                            <input type="text" name="first-name" placeholder='First name'/>
+                            <input type="text" name="last-name" placeholder='Last name'/>
+                            <input type="text" name="dob" placeholder='DOB'/>
+                            <input type="email" name="email" placeholder='Email'/>
+                            <input type="pasword" name="password" placeholder='Password'/>
+                            <input type="pasword" name="confirm-password" placeholder='Confirm password'/>
+                            <input type="phone" name="phone" placeholder='Phone'/>
+                            
+                        </div>
+                        <div class="form_right-col">
+                            <p>GENDER<label><input type="radio" checked="checked" name="gend" />Male</label><label><input type="radio" name="gend"  />Female</label></p>
+                              <div class="">  
+                                <input type="text" id="country" list="country_list" placeholder="COUNTRY">
+                                <datalist id="country_list">
+                                  <option>Abkhazia</option>
+                                  <option>Albania</option>
+                                  <option>Bulgaria</option>
+                                  <option>Bangladesh</option>
+                                  <option>Cameroon</option>
+                                  <option>Chile</option>
+                                  <option>China</option>
+                                  <option>Finland</option>
+                                  <option>France</option>
+                                </datalist>
+                                  
+                                <input type="text" id="state" list="state_list" placeholder="STATE">
+                                <datalist id="state_list">
+                                  <option>Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Connecticut</option>
+                                  <option>Florida</option>
+                                  <option>Maryland</option>
+                                </datalist>
+                                <input type="text" id="city" list="city_list" placeholder="CITY">
+                                <datalist id="city_list">
+                                  <option>Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Connecticut</option>
+                                  <option>Florida</option>
+                                  <option>Maryland</option>
+                                </datalist>
+                            </div>
+                            
+                            <input type="text" name="zip-code" placeholder='Zip code'/>
+                             <input type="text" name="address-line1" placeholder='Address line1'/>
+                            <input type="text" name="address-line2" placeholder='Address line2'/>
+                        </div>
+                        <div class="image-container">
+                            <img src="/img/maps_form.png" alt=""/>
+                        </div>
+                        </div>    
+                        <p>I agree with the Terms and Conditions<input type="checkbox" name="agree"/></p>
+                        <input type="submit" value="Submit"/>
+                    </div>
+                     
                 </form>
             </div>
         </div>
-        <nav>	 		
+        <div class="wrap-sector">
+        <nav class="gor-menu"> 	 		
             <ul class="nav-gorizontal">
-                <li><a href="">home</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">portfolio</a></li>
-                <li><a href="">about us</a></li>
-                <li><a href="">blog</a></li>
-                <li><a href="">contact us</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#about us">about us</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact us" id="show-letter" >contact us</a></li>
             </ul>
         </nav>
         <div class="next_cont"></div>
     </div>
+    </div>
     <script type="text/javascript" src='js/scroll.js'></script>
+   
 </body>
 </html>
