@@ -38,7 +38,7 @@ body{
  background:url(../img/letter_bg.png) no-repeat;
  background-size: 100% 100%;
  position:absolute;
- bottom: -480px;
+ bottom: -500px;
  width:954px;
  left:50%;
  margin-left:-477px;
@@ -55,7 +55,7 @@ body{
 .wrap-sector{
     z-index:2;
     position:relative;
-    height:100px;
+    height:800px;
 }
 .gor-menu{
    background:url(../img/nav_bg.png) repeat-x;
@@ -69,15 +69,11 @@ body{
 }
 .nav-gorizontal li{
     float:left;
-    padding:12px 33px;
 }
-.nav-gorizontal li:hover, .nav-gorizontal li.active{
+.nav-gorizontal li a:hover, .nav-gorizontal li a.active{
     background:#4b9db9;
     border-radius:20px;
     box-shadow: inset 0 0 0 2px #1f1308;
-    
-}
-.nav-gorizontal li:hover a{
     color:#cdcba8;
 }
 .nav-gorizontal li a{
@@ -85,6 +81,8 @@ body{
     font-weight:bold;
     text-decoration:none;
     font-size:16px;
+    display:inline-block;
+    padding:12px 33px;
 }
 .clearfix::after{
     content:' ';
