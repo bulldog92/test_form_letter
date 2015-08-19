@@ -12,10 +12,16 @@
     <div class="wrapper">
         <div class="container">
             <div class="cover-container">
-                <a href="/" id="hide-letter">close</a>
+                <div class="cover-inner">
+                    <img src="/img/left.png" alt="" class="left"/>
+                    <img src="/img/right.png" alt="" class="right"/>
+                    <img src="/img/bottom-cover.png" alt="" class="bottom"/>
+                    <a href="/" id="hide-letter">close</a>
+                </div>
+                </div>
             </div>
             <div class="form-wrapper">
-                <form>
+                <form id="form-letter">
                     <div class="col-wrap clearfix">
                         <div class="form_col-left">
                             <input type="text" name="first-name" placeholder='First name'/>
@@ -28,8 +34,8 @@
                             
                         </div>
                         <div class="form_right-col">
-                            <p>GENDER<label><input type="radio" checked="checked" name="gend" />Male</label><label><input type="radio" name="gend"  />Female</label></p>
-                              <div class="">  
+                            <p class="wrap-radio">GENDER:<label><input type="radio" checked="checked" name="gend" /><span></span>Male</label><label><input type="radio" name="gend"/><span></span>Female</label></p>
+                              <div class="list-input">  
                                 <input type="text" id="country" list="country_list" placeholder="COUNTRY">
                                 <datalist id="country_list">
                                   <option>Abkhazia</option>
@@ -41,6 +47,7 @@
                                   <option>China</option>
                                   <option>Finland</option>
                                   <option>France</option>
+                                  <option>Ukraine</option>
                                 </datalist>
                                   
                                 <input type="text" id="state" list="state_list" placeholder="STATE">
@@ -71,8 +78,8 @@
                             <img src="/img/maps_form.png" alt=""/>
                         </div>
                         </div>    
-                        <p>I agree with the Terms and Conditions<input type="checkbox" name="agree"/></p>
-                        <input type="submit" value="Submit"/>
+                        <p class="agree">I agree with the Terms and Conditions<input type="checkbox" name="agree"/></p>
+                        <input type="submit" value="send" class="buttonSend"/>
                     </div>
                      
                 </form>
