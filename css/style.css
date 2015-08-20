@@ -103,6 +103,7 @@ body{
 .gor-menu{
    background:url(../img/nav_bg.png) repeat-x;
    padding: 22px 0;
+    background-size: 10px 100%;
 }
 .nav-gorizontal{
     overflow:hidden;
