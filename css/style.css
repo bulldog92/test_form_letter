@@ -12,7 +12,7 @@ body{
 .wrapper{
     position:relative;
 }
-.container{
+.container-wr{
         background: url(../img/envelope-background.png) no-repeat, url(../img/wrap_bg.png) no-repeat;
     background-size: 948px 490px, cover;
     background-position: center bottom, center center;
@@ -54,6 +54,26 @@ body{
     right:30px;
     z-index:3;
 }
+.cover-inner .shadow-bot{
+    position: absolute;
+    top: -75px;
+    right: 262px;
+    z-index: 2;
+    width: 455px;
+}
+.cover-inner .shadow-left{
+    position: absolute;
+    top: -150px;
+    left: 19px;
+    z-index: 2;
+}
+
+.cover-inner .shadow-right{
+   position: absolute;
+    top: -135px;
+    right: 20px;
+    z-index: 2;
+}
 .form-wrapper{
     padding:2% 0;
     background:url(../img/letter_bg.png) no-repeat;
@@ -66,22 +86,23 @@ body{
     height:520px;
     z-index:1;
     background-position:center center;
+    display:none;
 }
 .next_cont{
     position:relative;
     background:url(../img/back.png) no-repeat, #FFF;
     height:500px;
     z-index:2;
-    background-size:cover;
+    background-position:center top;
 }
 .wrap-sector{
-    z-index:2;
+    z-index:4;
     position:relative;
     min-height:700px;
 }
 .gor-menu{
    background:url(../img/nav_bg.png) repeat-x;
-   padding: 23px 0;
+   padding: 22px 0;
 }
 .nav-gorizontal{
     overflow:hidden;
@@ -104,7 +125,7 @@ body{
     text-decoration:none;
     font-size:16px;
     display:inline-block;
-    padding:12px 33px;
+    padding:12px 30px;
 }
 .clearfix::after{
     content:' ';
@@ -122,6 +143,14 @@ body{
 .form_right-col{
     float:left;
     width:35%;
+}
+body .form_right-col input[type = 'text']{
+    width:240px;
+}
+body .list-input input[type='text']{
+    background:url(../img/input_list.png) no-repeat;
+    border:none;
+    background-position:center center;
 }
 .image-container{
     width:31%;
@@ -150,16 +179,13 @@ body{
      margin-left:-58px;
      
 }
-#form-letter input[type='text'], #form-letter input[type='email'], #form-letter input[type='phone'], #form-letter input[type='pasword']{
+.col-wrap input[type='text'], .col-wrap input[type='email'], .col-wrap input[type='tel'], .col-wrap input[type='password']{
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     border-top: 2px solid #cccccc;
     border-radius: 6px; 
-    -webkit-border-radius: 6px; 
-    -moz-border-radius: 6px; 
-    -khtml-border-radius: 6px; 
-    background: #ffffff!important; 
+    background: #ffffff; 
     outline: none; 
     height: 40px; 
     width: 207px; 
@@ -169,6 +195,7 @@ body{
     padding:0 0 0 20px;
     font-weight:bold;
 }
+
 .wrap-radio{
     margin:20px 0 10px 0;
     font-weight:bold;
@@ -228,4 +255,17 @@ input[type="radio"] + span {
 
 input[type="radio"]:checked + span {
     background:url(../img/input.png) -2px top no-repeat;
+}
+.no-active{
+    background:#9fa0a0!important;
+    border:none;
+    box-shadow:none;
+    cursor:default;
+}
+label.error{
+        display: block;
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    margin: -15px 0 0 10px;
 }

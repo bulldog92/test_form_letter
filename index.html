@@ -10,12 +10,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
+        <div class="container-wr">
             <div class="cover-container">
                 <div class="cover-inner">
                     <img src="/img/left.png" alt="" class="left"/>
                     <img src="/img/right.png" alt="" class="right"/>
                     <img src="/img/bottom-cover.png" alt="" class="bottom"/>
+                    <img src="/img/shadow-bot.png" alt="" class="shadow-bot"/>
+                    <img src="/img/shadow-right.png" alt="" class="shadow-right"/>
+                    <img src="/img/shadow_left.png" alt="" class="shadow-left"/>
                     <a href="/" id="hide-letter">close</a>
                 </div>
                 </div>
@@ -24,13 +27,13 @@
                 <form id="form-letter">
                     <div class="col-wrap clearfix">
                         <div class="form_col-left">
-                            <input type="text" name="first-name" placeholder='First name'/>
-                            <input type="text" name="last-name" placeholder='Last name'/>
+                            <input type="text" name="first_name" placeholder='First name' required/>
+                            <input type="text" name="last_name" placeholder='Last name' required/>
                             <input type="text" name="dob" placeholder='DOB'/>
-                            <input type="email" name="email" placeholder='Email'/>
-                            <input type="pasword" name="password" placeholder='Password'/>
-                            <input type="pasword" name="confirm-password" placeholder='Confirm password'/>
-                            <input type="phone" name="phone" placeholder='Phone'/>
+                            <input type="email" name="email" placeholder='Email' required/>
+                            <input type="password" name="password" placeholder='Password' required/>
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder='Confirm password' required/>
+                            <input type="tel" name="phone" placeholder='Phone'/>
                             
                         </div>
                         <div class="form_right-col">
@@ -70,7 +73,7 @@
                                 </datalist>
                             </div>
                             
-                            <input type="text" name="zip-code" placeholder='Zip code'/>
+                            <input type="text" name="zip_code" placeholder='Zip code'/>
                              <input type="text" name="address-line1" placeholder='Address line1'/>
                             <input type="text" name="address-line2" placeholder='Address line2'/>
                         </div>
@@ -93,13 +96,15 @@
                 <li><a href="#portfolio">portfolio</a></li>
                 <li><a href="#about us">about us</a></li>
                 <li><a href="#blog">blog</a></li>
-                <li><a href="#contact us" id="show-letter"  class="active" >contact us</a></li>
+                <li><a href="#contact us" id="show-letter" >contact us</a></li>
             </ul>
         </nav>
         <div class="next_cont"></div>
     </div>
     </div>
     <script type="text/javascript" src='js/custom.js'></script>
+    <script type="text/javascript" src="js/jquery-validate.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
    
 </body>
 </html>
